@@ -19,6 +19,7 @@ createPalette()
 /*
     Função que cria a paleta de cores disponível no front.
     Fonte: https://youtu.be/s-RCuZflUe4
+    Grande parte da lógica de desenhar na tela foi baseada na fonte citada anteriormente.
 */
 function createPalette() {
     const COLORS = [

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" 
+    integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+    <title>EP1 Redes - Sketch Board Online</title>
+</head>
+<body id="board">
+    <header>
+        <h1>EP1 Redes</h1>
+    </header>
+    <div id="wrapper">
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <div id="controls">
+            <div id="lineWidth" title="Escolha o tamanho da linha">
+                <div class="widthExample"></div>
+                <div class="widthExample"></div>
+                <div class="widthExample"></div>
+                <div class="widthExample"></div>
+                <div class="widthExample"></div>
+            </div>
+            <div id="palette" title="Escolha uma cor"></div>
+            
+            <div id="clearBtn" title="Limpar o canvas">
+                X
+            </div>
+    
+            <div id="counteDiv">
+                <span id="counter">0</span> usuários<br>estão online.
+            </div>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

@@ -25,6 +25,9 @@ let drawHistory = []
     Event listener que lida com as novas conexões, ou seja, para cada nova conexão
     será executado todos as funções que estão presentes na função de callback
     que recebe como parâmetro as informações do socket conectado
+    Fontes:
+    https://youtu.be/jD7FnbI76Hg (principalmente na questão das rooms e users)
+    https://youtu.be/jD7FnbI76Hg (principalmente na questão de lidar e trasmitir as informações e eventos)
 */
 io.on('connect', (socket) => {
 

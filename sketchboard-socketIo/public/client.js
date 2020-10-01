@@ -11,7 +11,11 @@ socket.emit('joinRoom', {username, room})
 
 createPalette()
 
-// função que cria a paleta de cores disponíveis na tela
+/*
+    função que cria a paleta de cores disponíveis na tela
+    Fonte: https://youtu.be/s-RCuZflUe4 
+    Grande parte da lógica de desenhar na tela foi baseada na fonte citada anteriormente.
+*/
 function createPalette() {
     const COLORS = [
         'black',
@@ -75,9 +79,7 @@ canvas.addEventListener('mousedown', (evt) => {
     EventListener que obtém a informação de que o usuário está movendo o mouse na tela.
     Caso ele esteja desenhando (mouse clickado) chamamos a função de desenhar.
 */
-canvas.addEventListener('mousemove', (evt) => {
-    // line.pos = getMousePos(evt)
-    
+canvas.addEventListener('mousemove', (evt) => {    
     if(line.painting) {
         draw(evt)
     }
@@ -135,7 +137,7 @@ function draw(evt) {
 }
 
 /*
-    Função que recebe o comando emitido pelo server side de desenhar na tela.
+    Função que recebe o comando emitido pelo server de desenhar na tela.
     Recebemos então a cor, grossura, posição inicial, posição final e a room,
     e renderizamos o traço na tela.
 */
@@ -152,7 +154,7 @@ socket.on('drawing', (color, width, startPos, endPos, room) => {
 
 /*
     Função que obtem a informação de que o usuário quer limpar toda a tela de desenho.
-    Emitimos então essa informação para o server side que faz os tratamento necessário e
+    Emitimos então essa informação para o server que faz os tratamento necessário e
     envia de volta o comando para limparmos a tela.
 */
 document.getElementById('clearBtn').addEventListener('click', () => {
@@ -160,7 +162,7 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 })
 
 /*
-    Função que recebe o comando para limparmos a tela de desenho do server side.
+    Função que recebe o comando para limparmos a tela de desenho do server.
     Aqui apenas pintamos toda a tela de branco novamente.
 */
 socket.on('clearCanvas', (room) => {

@@ -22,4 +22,4 @@ Feito isto basta agora rodar o server, que estará rodando localhost na porta 30
 
 node server.js
 
-Também está incluso um executável, basta abrir o diretório onde está salvo o executável no terminal e digitar ./sketchboard-ep1, após você verá uma mensagem no temrinal de que o servidor está rodando na porta 3000, bastando apenas digitar localhost:3000 no browser.
+Também está incluso um executável, basta abrir o diretório onde está salvo o executável no terminal e digitar ./sketchboard-ep1 (linux) ou clicar duas vezes no .exe no windows, após você verá uma mensagem no temrinal de que o servidor está rodando na porta 3000, bastando apenas digitar localhost:3000 no browser.

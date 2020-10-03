@@ -1,5 +1,5 @@
 {
-  "name": "sketchboard-ep1",
+  "name": "sketchboard-socketio-ep1",
   "version": "1.0.0",
   "description": "EP1 de Redes - sketch board online",
   "main": "server.js",

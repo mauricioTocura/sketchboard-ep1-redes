@@ -27,7 +27,7 @@ let drawHistory = []
     que recebe como parâmetro as informações do socket conectado
     Fontes:
     https://youtu.be/jD7FnbI76Hg (principalmente na questão das rooms e users)
-    https://youtu.be/jD7FnbI76Hg (principalmente na questão de lidar e trasmitir as informações e eventos)
+    https://youtu.be/s-RCuZflUe4 (principalmente na questão de lidar e trasmitir as informações e eventos)
 */
 io.on('connect', (socket) => {
 

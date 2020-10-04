@@ -1,3 +1,5 @@
+/* Classe baseada no vídeo https://youtu.be/jD7FnbI76Hg */
+
 // variável para armazenar todos os usuários
 const users = []
 
